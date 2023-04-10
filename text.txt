@@ -1,0 +1,1 @@
+This course contains the web development content.
