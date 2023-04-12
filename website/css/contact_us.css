@@ -148,9 +148,3 @@ body {
     margin-left: 0;
   }
 }
-
-/* Password hide */
-.form-wrapper{
-  margin: 10em auto;
-  max-width: 30em;
-}
