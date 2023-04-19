@@ -1,0 +1,43 @@
+body {
+  text-align: center;
+  font-family: "Changa", sans-serif;
+}
+
+.top-container {
+  background-color: #e4f9f5;
+  position: relative;
+  padding-top: 100px;
+}
+
+.top-container h1 {
+  margin: 0 auto;
+  font-family: "MonteCarlo", cursive;
+}
+
+.middle-container {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+}
+
+.bottom-container {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.underline {
+  text-decoration: underline;
+}

@@ -1,8 +1,11 @@
-
 /* Password hide */
 .form-wrapper {
   margin: 10em auto;
   max-width: 30em;
+}
+/* Background Color */
+body {
+  background-color: #e8f8f8;
 }
 
 /* Font css */
