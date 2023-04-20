@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Changa:wght@800&family=MonteCarlo&display=swap"
       rel="stylesheet"
     />
@@ -18,22 +22,98 @@
   <body>
     <div class="top-container">
       <!-- content division element -->
-      <img
-        class="top-cloud"
-        src="/website/images/cloud.png"
-        alt="cloud-image"
-      />
+      <div class="top-cloud-move-right" id="id-cloud">
+        <img
+          class="cloud-animation"
+          src="/website/images/cloud.png"
+          alt="cloud-image"
+        />
+      </div>
       <h1>I'm Ganesh</h1>
       <p>a <span class="underline">GIS</span> Programmer</p>
-      <img
+      <div class="bottom-cloud-move-left" id="id-cloud">
+        <img
+          class="cloud-animation"
+          src="/website/images/cloud.png"
+          alt="cloud-image"
+        />
+      </div>
+      <!-- <img
         class="bottom-cloud"
         src="/website/images/cloud.png"
         alt="cloud-image"
-      />
+      /> -->
       <img src="/website/images/mountain.png" alt="mountain-image" />
     </div>
 
-    <div class="middle-container"></div>
-    <div class="bottom-container"></div>
+    <div class="middle-container">
+      <div class="profile">
+        <img src="/website/images/human-circle-img.png" alt="profile-image" />
+        <h2>Hello.</h2>
+        <p class="intro">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed esse
+          neque pariatur velit eos a deserunt excepturi, vel rem provident
+          dignissimos autem, perferendis quos officia tempora, expedita quis
+          amet consequatur.
+        </p>
+      </div>
+      <hr />
+      <div class="skills">
+        <h2>My Skills.</h2>
+        <div class="skill-row">
+          <img
+            class="skills-img"
+            src="/website/images/coding_gif.webp"
+            alt="skills-image"
+          />
+          <h3>Lorem & Ipsum</h3>
+          <p>
+            Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
+            bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
+            eu, rutrum nam.
+          </p>
+        </div>
+        <div class="skill-row">
+          <img
+            class="earth-img"
+            src="/website/images/earth.gif"
+            alt="earth-image"
+          />
+          <h3>Lorem Ipsum Dolor</h3>
+          <p>
+            Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu,
+            bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel
+            eu, rutrum nam.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="contact-me">
+        <h2>Get In Touch</h2>
+        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ratione
+          possimus fugit accusamus ipsam non nam optio vitae reprehenderit
+          tempora, ad cupiditate ullam sit earum reiciendis, beatae omnis, vero
+          architecto.
+        </p>
+        <a class="btn" href="mailto:testmail@mail.com">Contact Me</a>
+      </div>
+    </div>
+    <!-- <div class="top-cloud-animation" id="id-top-cloud">
+      <img
+        class="top-cloud-move-right"
+        src="/website/images/cloud.png"
+        alt="cloud-image"
+      />
+    </div> -->
+
+    <div class="bottom-container">
+      <a class="fa fa-linkedin" href="https://www.linkedin.com/"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/"></a>
+      <a class="fa fa-youtube" href="https://www.youtube.com/"></a>
+      <p>© Ganesh</p>
+    </div>
+    <!--Alt + 0169 = Copyright Symbol -->
   </body>
 </html>
