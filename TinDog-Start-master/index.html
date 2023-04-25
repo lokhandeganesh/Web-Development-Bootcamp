@@ -67,13 +67,13 @@
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Download</a>
+                <a class="nav-link" href="#cta">Download</a>
               </li>
             </ul>
           </div>
@@ -81,7 +81,7 @@
         <!-- Title -->
         <div class="row" id="title-row">
           <div class="col-lg-6 col-md-6 col-sm-6">
-            <h1>Meet new and interesting dogs nearby.</h1>
+            <h1 id="title-heading">Meet new and interesting dogs nearby.</h1>
             <button type="button" class="btn btn-dark btn-lg download-button">
               <i class="fa-brands fa-apple"></i> Download
             </button>
@@ -106,19 +106,19 @@
     <!-- Features -->
     <section id="features">
       <div class="row">
-        <div class="features-info col-lg-4">
+        <div class="text-center features-info col-lg-4">
           <i class="feature-icon fa-solid fa-circle-check fa-4x"></i>
-          <h3>Easy to use.</h3>
+          <h3 id="features-title">Easy to use.</h3>
           <p>So easy to use, even your dog could do it.</p>
         </div>
-        <div class="features-info col-lg-4">
+        <div class="text-center features-info col-lg-4">
           <i class="feature-icon fa-solid fa-bullseye fa-4x"></i>
-          <h3>Elite Clientele</h3>
+          <h3 id="features-title">Elite Clientele</h3>
           <p>We have all the dogs, the greatest dogs.</p>
         </div>
-        <div class="features-info col-lg-4">
+        <div class="text-center features-info col-lg-4">
           <i class="feature-icon fa-solid fa-heart fa-4x"></i>
-          <h3>Guaranteed to work.</h3>
+          <h3 id="features-title">Guaranteed to work.</h3>
           <p>Find the love of your dog's life or your money back.</p>
         </div>
       </div>
@@ -128,7 +128,7 @@
     <section id="testimonials">
       <div
         id="carouselExampleIndicators"
-        class="carousel slide"
+        class="carousel slide text-center"
         data-interval="5000"
         data-pause="hover"
         data-ride="carousel"
@@ -195,7 +195,7 @@
 
     <!-- Press -->
 
-    <section id="press">
+    <section id="press" class="text-center">
       <img class="press-logo" src="images/techcrunch.png" alt="tc-logo" />
       <img class="press-logo" src="images/tnw.png" alt="tnw-logo" />
       <img
@@ -209,17 +209,17 @@
     <!-- Pricing -->
     <section id="pricing">
       <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-        <h2>A Plan for Every Dog's Needs</h2>
+        <h2 id="pricing-title">A Plan for Every Dog's Needs</h2>
         <p>Simple and affordable price plans for your and your dog.</p>
       </div>
       <div class="container">
         <div class="card-deck mb-3 text-center">
           <div class="card mb-4 box-shadow">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Chihuahua</h4>
+              <h4 class="price-card-plan my-0 font-weight-normal">Chihuahua</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">
+              <h1 class="price-card card-title pricing-card-title">
                 $0 <small class="text-muted">/ mo</small>
               </h1>
               <ul class="list-unstyled mt-3 mb-4">
@@ -237,10 +237,10 @@
           </div>
           <div class="card mb-4 box-shadow">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Labrador</h4>
+              <h4 class="price-card-plan my-0 font-weight-normal">Labrador</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">
+              <h1 class="price-card card-title pricing-card-title">
                 $49 <small class="text-muted">/ mo</small>
               </h1>
               <ul class="list-unstyled mt-3 mb-4">
@@ -255,10 +255,10 @@
           </div>
           <div class="card mb-4 box-shadow">
             <div class="card-header">
-              <h4 class="my-0 font-weight-normal">Mastiff</h4>
+              <h4 class="price-card-plan my-0 font-weight-normal">Mastiff</h4>
             </div>
             <div class="card-body">
-              <h1 class="card-title pricing-card-title">
+              <h1 class="price-card card-title pricing-card-title">
                 $99 <small class="text-muted">/ mo</small>
               </h1>
               <ul class="list-unstyled mt-3 mb-4">
@@ -277,11 +277,9 @@
     </section>
 
     <!-- Call to Action -->
-    <section id="cta">
+    <section id="cta" class="text-center">
       <div class="container">
-        <h3 style="color: #ffffff">
-          Find the True Love of Your Dog's Life Today.
-        </h3>
+        <h3 id="cta-title">Find the True Love of Your Dog's Life Today.</h3>
         <button type="button" class="btn btn-dark btn-lg download-button">
           <i class="fa-brands fa-apple"></i> Download
         </button>
@@ -291,6 +289,20 @@
         >
           <i class="fa-brands fa-google-play"></i> Download
         </button>
+      </div>
+      <div class="container text-center">
+        <a class="text-muted" href="#"
+          ><i class="fa-brands fa-twitter" id="social-media-link"></i
+        ></a>
+        <a class="text-muted" href="#"
+          ><i class="fa-brands fa-facebook-f" id="social-media-link"></i
+        ></a>
+        <a class="text-muted" href="#"
+          ><i class="fa-brands fa-instagram" id="social-media-link"></i
+        ></a>
+        <a class="text-muted" href="#"
+          ><i class="fa-solid fa-envelope" id="social-media-link"></i
+        ></a>
       </div>
     </section>
 
