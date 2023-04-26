@@ -49,6 +49,8 @@ p {
 
 /* Navigation Bar */
 .navbar-brand {
+  color: #ffffff;
+  background-color: #fa0000;
   font-family: "Ubuntu", sans-serif;
   font-size: 1.5rem;
   font-weight: bold;
