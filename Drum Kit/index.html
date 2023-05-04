@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Arvo"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <h1 id="title">Drum 🥁 Kit</h1>
+    <div class="set">
+      <button
+        class="a drum"
+        id="tom-1"
+        onclick="buttonClick(this.getAttribute('id'))"
+      >
+        a
+      </button>
+      <button
+        class="s drum"
+        id="tom-2"
+        onclick="buttonClick(this.getAttribute('id'))"
+      >
+        s
+      </button>
+      <button
+        class="d drum"
+        id="tom-3"
+        onclick="buttonClick(this.getAttribute('id'))"
+      >
+        d
+      </button>
+      <button
+        class="f drum"
+        id="tom-4"
+        onclick="buttonClick(this.getAttribute('id'))"
+      >
+        f
+      </button>
+      <button
+        class="j drum"
+        id="snare"
+        onclick="buttonClick(this.getAttribute('id'))"
+      >
+        j
+      </button>
+      <button
+        class="k drum"
+        id="crash"
+        onclick="buttonClick(this.getAttribute('id'))"
+      >
+        k
+      </button>
+      <button
+        class="l drum"
+        id="kick-bass"
+        onclick="buttonClick(this.getAttribute('id'))"
+      >
+        l
+      </button>
+    </div>
+
+    <!-- custom javascript file -->
+    <script src="index.js"></script>
+    <footer>Made with ❤️ in India.</footer>
+  </body>
+</html>
