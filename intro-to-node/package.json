@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "intro-to-node",
+  "version": "1.0.0",
+  "description": "This is nodeJS project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ganesh Lokhande",
+  "license": "ISC"
+}
