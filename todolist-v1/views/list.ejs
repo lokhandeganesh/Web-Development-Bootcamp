@@ -1,41 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo List</title>
-    <link
-      rel="stylesheet"
-      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="">
-        <h1><%= kindOfDay %></h1>
+<%- include('header'); -%>
 
-        <ul id="listTodo">
-          <!-- <li id="item1">Buy Food</li>
-          <li id="item2">Cook Food</li>
-          <li id="item3">Eat Food</li> -->
+  <div class="box" id="heading">
+    <h1><%= listTitle %></h1>
+  </div>
 
-          <% for (var i=0; i<newListItems.length; i++){ %>
-             <li id= <%=`item${i+1}` %>> <%= newListItems[i] %></li> 
-          <% } %>
-        </ul>
-
-        <form action="/" method="post" class="">
-          <input
-            type="text"
-            name="addToTodo"
-            class=""
-            id="inputTodo"
-            placeholder="Add To TODO List"
-          />
-          <button type="submit" id="addBtn">Add</button>
-        </form>
-      </div>
+  <div class="box">
+    <!-- <li id="item1">Buy Food</li> -->
+    <% for (var i=0; i <newListItems.length; i++){ %>
+    <div class="item">
+      <input type="checkbox" />
+      <p><%= newListItems[i] %></p>
     </div>
-  </body>
-</html>
+    <% } %>
+
+    <form action="/" method="post" class="item">
+      <input type="text" name="newItem" placeholder="Add To TODO List" autocomplete="off"/>
+      <button class="btn btn-primary" type="submit" name="list" value= <%= listTitle %> >+</button>
+    </form>
+  </div>
+
+<%- include('footer'); -%>
