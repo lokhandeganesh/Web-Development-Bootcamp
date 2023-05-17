@@ -9,16 +9,6 @@ const localhost = 3000;
 app.use(bodyParser.urlencoded({ extended: true }));
 //app.use(express.static(__dirname)); // initializing app to use home directory access
 
-var days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-
 var options = {
   weekday: "long",
   year: "numeric",
@@ -26,19 +16,16 @@ var options = {
   day: "numeric",
 };
 
-app.get("/", function (req, res) {
-  var today = new Date();
-  var dayName = days[today.getDay()];
-  // let todayDate = new Date().toISOString().slice(0, 10);
-  console.log(today.toLocaleString("en-US", options));
+var today = new Date();
+var day = today.toLocaleString("en-US", options);
 
-  if (today.getDay() === 6 || today.getDay() === 0) {
-    // day = "weekend";
-    res.render("list", { kindOfDay: dayName });
-  } else {
-    // day = "weekday";
-    res.render("list", { kindOfDay: dayName });
-  }
+app.get("/", function (req, res) {
+  res.render("list", { kindOfDay: day });
+});
+
+app.post("/", function (req, res) {
+  const addToTodo = req.body.addToTodo;
+  console.log(addToTodo);
 });
 
 app.listen(localhost, function () {
