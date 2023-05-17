@@ -25,6 +25,16 @@ app.get("/", function (req, res) {
 
 app.post("/", function (req, res) {
   const addToTodo = req.body.addToTodo;
+
+  function appendLi(addToTodo) {
+    var ul = document.getElementById("listTodo");
+    var li = document.createElement("li");
+
+    li.appendChild(document.createTextNode(addToTodo));
+    li.setAttribute("id", "item4");
+    ul.appendChild(li);
+  }
+
   console.log(addToTodo);
 });
 
