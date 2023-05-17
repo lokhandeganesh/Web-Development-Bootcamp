@@ -18,24 +18,20 @@ var options = {
 
 var today = new Date();
 var day = today.toLocaleString("en-US", options);
+var addToTodo = "";
+var items = ["Buy Food", "Cook Food", "Eat Food"];
 
 app.get("/", function (req, res) {
-  res.render("list", { kindOfDay: day });
+  res.render("list", { kindOfDay: day, newListItems: items });
 });
 
 app.post("/", function (req, res) {
-  const addToTodo = req.body.addToTodo;
+  addToTodo = req.body.addToTodo;
+  // console.log(addToTodo);
 
-  function appendLi(addToTodo) {
-    var ul = document.getElementById("listTodo");
-    var li = document.createElement("li");
+  items.push(addToTodo);
 
-    li.appendChild(document.createTextNode(addToTodo));
-    li.setAttribute("id", "item4");
-    ul.appendChild(li);
-  }
-
-  console.log(addToTodo);
+  res.redirect("/");
 });
 
 app.listen(localhost, function () {
