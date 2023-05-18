@@ -63,16 +63,24 @@ app.get("/posts/:postName", function (req, res) {
   // console.log(res.send(req.params.postName));
   let requiredPostName = req.params.postName;
 
-  function getObject(postName) {
-    let obj = posts.find((object) => object.inputBlogTitle === postName);
-    return obj;
-  }
+  // function getObject(postName) {
+  //   let obj = posts.find((object) => object.inputBlogTitle === postName);
+  //   return obj;
+  // }
 
-  if (getObject(requiredPostName)) {
-    console.log("Found");
-  } else {
-    console.log("Not Found");
-  }
+  // if (getObject(requiredPostName)) {
+  //   console.log("Found");
+  // }
+
+  posts.forEach(function (post) {
+    const storedInputBlogTitle = post.inputBlogTitle;
+
+    if (storedInputBlogTitle === requiredPostName) {
+      console.log("Found");
+    } else {
+      console.log("Not Found");
+    }
+  });
 
   // res.render("compose");
 });
