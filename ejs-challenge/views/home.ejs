@@ -6,7 +6,9 @@
 
 <% posts.forEach(function(post){ %>
   <h1><%= post.inputBlogTitle %></h1>
-  <p><%= post.inputBlogText %></p>
+  <p><%= post.inputBlogText.substring(0, 100) + "..." %></p> 
+    <a href="/posts/<%=post.inputBlogTitle %>">Read More</a>
+  
 <% }) %>
 
 <%- include('partials/footer'); -%>
