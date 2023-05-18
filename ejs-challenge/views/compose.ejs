@@ -1,0 +1,75 @@
+<%- include('partials/header'); -%>
+
+<!--
+<h1>Compose</h1>
+
+ <form action="/compose" method="post">
+  <label for="inputBlogTitle">Title</label>
+  <input type="text" name="inputBlogTitle" autocomplete="off" />
+
+  <label for="inputBlog">Post</label>
+  <input type="text" name="inputBlog" autocomplete="off" />
+  <button class="btn btn-primary" type="submit">Publish</button>
+</form> -->
+
+<div class="text-left mt-5">
+  <h1>Compose</h1>
+</div>
+
+<div class="row">
+  <div class="col-lg-7 mx-auto">
+    <div class="card mt-2 mx-auto p-4 bg-light">
+      <div class="card-body bg-light">
+        <div class="container">
+          <form action="/compose" method="post" id="blog-form" role="form">
+            <div class="controls">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="inputBlogTitle">Title *</label>
+                    <input
+                      id="inputBlogTitleID"
+                      type="text"
+                      name="inputBlogTitle"
+                      class="form-control"
+                      placeholder="Title of Your Blog Post *"
+                      required="required"
+                      data-error="Title is required."
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <label for="form_message">Post *</label>
+                    <textarea
+                      id="inputBlogId"
+                      name="inputBlogText"
+                      class="form-control"
+                      placeholder="Write your Blog here."
+                      rows="4"
+                      required="required"
+                      data-error="Please, leave us a message."
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="col-lg-3 col-md-3">
+                  <button class="btn btn-primary btn-send" type="submit">
+                    Publish
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- /.8 -->
+  </div>
+  <!-- /.row-->
+</div>
+
+<%- include('partials/footer'); -%>
