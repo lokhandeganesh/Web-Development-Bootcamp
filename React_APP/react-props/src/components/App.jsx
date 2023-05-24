@@ -28,7 +28,10 @@ function App() {
       </h1>
       <React.StrictMode>
       <dl className="dictionary">
-        {Emojipedia.map(createCard)}
+        {/* {Emojipedia.map(createCard)} */}
+        {Emojipedia.map( (emojiTerm) => 
+          <Card key={emojiTerm.id} id = {emojiTerm.id} name={emojiTerm.name} img_src= {emojiTerm.emoji} meaning={emojiTerm.meaning} />
+          )}
       </dl>
       </React.StrictMode>
     </div>
