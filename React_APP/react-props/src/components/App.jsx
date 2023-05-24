@@ -3,6 +3,7 @@ import Card from './Card';
 // 
 
 import Emojipedia from '../emojipedia'
+// import Double from "../array";
 // console.log(Emojipedia)
 
 function createCard(emojiTerm) {
