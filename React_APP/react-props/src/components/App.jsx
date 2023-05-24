@@ -1,38 +1,35 @@
 import React from 'react';
 import Card from './Card';
 // 
-import Contacts from '../contacts'
 
-// const card = [];
-// Contacts.forEach(contact => {
-//   card.push(<Card key={contact.id} name={contact.name} img_src= {contact.imgURL} phone={contact.phone} email={contact.email} />)
-//   });
+import Emojipedia from '../emojipedia'
+// console.log(Emojipedia)
 
-function createCard(contact) {
+function createCard(emojiTerm) {
   return(
     <Card 
-    key={contact.id} 
-    id = {contact.id}
-    name={contact.name} 
-    img_src= {contact.imgURL} 
-    phone={contact.phone} 
-    email={contact.email}
+    key={emojiTerm.id} 
+    id = {emojiTerm.id}
+    name={emojiTerm.name} 
+    img_src= {emojiTerm.emoji} 
+    meaning={emojiTerm.meaning} 
     />
   );
 }
-
 
 // 
 function App() {
   return (
     
     <div> 
-      <React.StrictMode>      
-      <h1 className="heading">My Contacts</h1>
-      {/* {card} */}
-      {Contacts.map(createCard)}
-      
-      </React.StrictMode>     
+      <h1>
+        <span>emojipedia</span> 
+      </h1>
+      <React.StrictMode>
+      <dl className="dictionary">
+        {Emojipedia.map(createCard)}
+      </dl>
+      </React.StrictMode>
     </div>
     
   );
