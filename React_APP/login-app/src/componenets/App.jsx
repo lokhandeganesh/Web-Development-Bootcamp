@@ -18,7 +18,7 @@ import Form from "./Form";
 // }
 
 // var isLoggedIn = false;
-var userRegistered = false;
+var userRegistered = true;
 
 function App () {
   return (
